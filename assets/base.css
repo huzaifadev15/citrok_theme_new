@@ -520,22 +520,6 @@ table:not([class]) th {
   opacity: 0.7;
 }
 
-a:empty,
-ul:empty,
-dl:empty,
-div:empty,
-section:empty,
-article:empty,
-p:empty,
-h1:empty,
-h2:empty,
-h3:empty,
-h4:empty,
-h5:empty,
-h6:empty {
-  display: none;
-}
-
 .link,
 .customer a {
   cursor: pointer;
@@ -2297,4 +2281,32 @@ details-disclosure > details {
   background: var(--color-background);
   background: var(--gradient-background);
   background-attachment: fixed;
+}
+
+.product-bubble{
+  position: absolute;
+  top: 27px;
+ left: 170px;
+  height: 95px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-size: contain ;
+  text-align: center;
+  z-index: 1 ;
+} 
+
+.bubble--sale > span,
+.bubble--fave > span {
+  color: #fff;
+}
+.bubble--new{
+  color: black;
+}
+
+.product-bubble > span{
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
